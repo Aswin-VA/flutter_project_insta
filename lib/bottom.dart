@@ -1,46 +1,42 @@
 import 'package:flutter/material.dart';
+import './bottomicons.dart';
 
 class Buttom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 730),
-      child: GridView.count(
-        crossAxisCount: 5,
+      padding: EdgeInsets.only(top: 760),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          IconButton(
-            icon: Icon(Icons.home),
-            color: Colors.white,
-            onPressed: () {
-              print("Home");
+          BottomIcon(
+            icon: Icons.home,
+            function: () {
+              print("home");
             },
           ),
-          IconButton(
-            icon: Icon(Icons.search),
-            color: Colors.white,
-            onPressed: () {
-              print("Search");
+          BottomIcon(
+            icon: Icons.search,
+            function: () {
+              print("search");
             },
           ),
-          IconButton(
-            icon: Icon(Icons.movie),
-            color: Colors.white,
-            onPressed: () {
-              print("Reels");
+          BottomIcon(
+            icon: Icons.movie_creation_outlined,
+            function: () {
+              print("reel");
             },
           ),
-          IconButton(
-            icon: Icon(Icons.emoji_emotions),
-            color: Colors.white,
-            onPressed: () {
-              print("Notification");
+          BottomIcon(
+            icon: Icons.emoji_emotions_outlined,
+            function: () {
+              print("notify");
             },
           ),
-          IconButton(
-            icon: Icon(Icons.supervised_user_circle),
-            color: Colors.white,
-            onPressed: () {
-              print("User");
+          BottomIcon(
+            icon: Icons.supervised_user_circle_outlined,
+            function: () {
+              print("user");
             },
           ),
         ],
