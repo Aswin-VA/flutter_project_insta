@@ -14,8 +14,8 @@ class Foreground extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: "font",
-                  fontSize: 30,
-                  fontWeight: FontWeight.w800),
+                  fontSize: 35,
+                  fontWeight: FontWeight.w900),
             ),
           ),
           backgroundColor: Colors.black,

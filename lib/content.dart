@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_app1/scroll.dart';
 
 class Content extends StatelessWidget {
@@ -11,16 +12,19 @@ class Content extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Scroll(),
+            seperetionLine(),
             divide(),
             Image.asset("assets/pic1.jpeg"),
             SizedBox(
               height: 140,
             ),
+            seperetionLine(),
             divide(),
             Image.asset("assets/pic2.jpeg"),
             SizedBox(
               height: 140,
             ),
+            seperetionLine(),
             divide(),
             Image.asset("assets/pic3.jpg"),
             SizedBox(
@@ -57,5 +61,12 @@ Widget divide() {
         ],
       ),
     ),
+  );
+}
+
+Widget seperetionLine() {
+  return Divider(
+    thickness: 0.1,
+    color: Colors.grey,
   );
 }

@@ -44,6 +44,7 @@ flutter:
     - family: Font
       fonts:
         - asset: fonts/DancingScript.ttf
+        - asset: fonts/MyFlutterApp.ttf
 
 
   # The following line ensures that the Material Icons font is
@@ -59,8 +60,6 @@ flutter:
     - assets/pic2.jpeg
     - assets/pic3.jpg
     - assets/dp.png
-    - lib/presentation/my_flutter_app_icons.dart
-    - fonts/MyFlutterApp.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
