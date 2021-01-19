@@ -13,10 +13,19 @@ class Content extends StatelessWidget {
             Scroll(),
             divide(),
             Image.asset("assets/pic1.jpeg"),
+            SizedBox(
+              height: 140,
+            ),
             divide(),
             Image.asset("assets/pic2.jpeg"),
+            SizedBox(
+              height: 140,
+            ),
             divide(),
             Image.asset("assets/pic3.jpg"),
+            SizedBox(
+              height: 140,
+            ),
           ],
         ),
       ),
@@ -29,9 +38,23 @@ Widget divide() {
     height: 70,
     child: Align(
       alignment: Alignment.centerRight,
-      child: Icon(
-        Icons.menu,
-        color: Colors.white,
+      child: Stack(
+        children: [
+          Align(
+            alignment: AlignmentDirectional.centerEnd,
+            child: Icon(
+              Icons.menu,
+              color: Colors.white,
+            ),
+          ),
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: Image.asset(
+              "assets/dp.png",
+              scale: 12,
+            ),
+          )
+        ],
       ),
     ),
   );
