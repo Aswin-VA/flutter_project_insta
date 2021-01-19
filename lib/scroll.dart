@@ -11,7 +11,7 @@ class Scroll extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 80),
+      padding: EdgeInsets.only(top: 67, bottom: 10),
       child: Container(
         height: 101,
         color: Colors.black,
